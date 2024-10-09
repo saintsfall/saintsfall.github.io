@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Trigger deployment when pushing to the main branch
+      - main
 
 jobs:
   build:
@@ -11,20 +11,24 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3  # No issue with Node.js here as it's just checking out the repo
+      uses: actions/checkout@v3
 
     - name: Set up Node.js
-      uses: actions/setup-node@v3  # Automatically uses the latest stable version
+      uses: actions/setup-node@v3
       with:
-        node-version: '20'  # Specify Node.js 20 to avoid deprecation issues
+        node-version: '20'
+
+    # Verify Node.js version
+    - run: node -v
 
     - run: npm install  # Install dependencies
 
-    - run: npm run build --if-present  # Build the site (if applicable)
+    # Add verbose logging to see if there's any issue during the build
+    - run: npm run build --if-present --verbose
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3  # This action manages GitHub Pages deployment
+      uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist  # Modify this if your build output directory is different
-        publish_branch: gh-pages  # The target branch for GitHub Pages
+        publish_dir: ./dist  # Modify if needed
+        publish_branch: gh-pages
