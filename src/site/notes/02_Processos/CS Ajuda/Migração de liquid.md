@@ -2,8 +2,6 @@
 {"dg-publish":true,"permalink":"/02-processos/cs-ajuda/migracao-de-liquid/","tags":["gardenEntry"]}
 ---
 
-Something something
-
 A acordada a alteração com o seller a partir do seguinte texto:
 
 ## TEXTO PARA O SELLER
