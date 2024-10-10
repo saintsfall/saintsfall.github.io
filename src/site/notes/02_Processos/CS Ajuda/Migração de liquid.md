@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/02-processos/cs-ajuda/migracao-de-liquid/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/02-processos/cs-ajuda/migracao-de-liquid/","tags":["gardenEntry"],"noteIcon":"","created":"2024-10-09T16:52:26.945-03:00","updated":"2024-10-09T20:58:17.720-03:00"}
 ---
 
 A acordada a alteração com o seller a partir do seguinte texto:

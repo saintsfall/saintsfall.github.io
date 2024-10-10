@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/02-processos/cs-ajuda/liberacao-de-acesso-ao-codigo-agencia/"}
+{"dg-publish":true,"permalink":"/02-processos/cs-ajuda/liberacao-de-acesso-ao-codigo-agencia/","noteIcon":"","created":"2024-10-09T16:52:26.945-03:00","updated":"2024-10-09T18:44:02.726-03:00"}
 ---
 
 Para a liberação de acesso ao repositório do seller para agências o processo deve ser o seguite:
