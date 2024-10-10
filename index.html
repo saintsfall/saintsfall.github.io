@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Migração de liquid</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.eae2f3b6.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Digital Garden</h1>
+</a>
+</div>
+</nav>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<p>A acordada a alteração com o seller a partir do seguinte texto:</p>
+<h2 id="texto-para-o-seller" tabindex="-1">TEXTO PARA O SELLER</h2>
+<p>Verificamos por aqui que a sua loja possuí o modelo antigo de código implementado no momento do desenvolvimento, sendo o liquid2.</p>
+<p>O recomendado pela equipe de front-end seria a atualização do liquid (versão do código) da loja para o mais recente, o liquid4, antes da realização dos novos pontos de implementação desejados.</p>
+<p>Explicando um pouco sobre o sistema Liquid: Ele é utilizado na Vnda como base no código para a criação dos sites, existem duas versões dele: Liquid2 (versão das lojas mais antigas da Vnda/versão inicial) e o Liquid4 (versão das lojas mais recentes/versão atual).<br>
+De acordo com a versão de liquid de cada loja, os ajustes e implementações são feitos de formas diferentes. Algumas alterações possíveis de serem realizadas em lojas que possuem a versão do liquid4, não são possíveis de serem feitas no liquid2, ou implementações de features mais atuais em lojas que possuem o código muito antigo, como este caso.</p>
+<p>A atualização de liquid se trata de uma atualização no código, para que o mesmo fique com a base interna mais recente e para que os tratamentos no código sejam mais efetivos e simples para nossos desenvolvedores.</p>
+<p>As features de layout não sofrem alterações. A migração se dá somente para os pontos supracitados, e para que o time de front possa ter um código mais limpo e atual para mexer.</p>
+<p>Em questões visuais do site, nada sofrerá alterações.</p>
+<p>Ela também não possuí custos para realização.<br>
+A migração é realizada primeiro em ambiente de testes e leva cerca de 15 à 20 dias úteis após a aprovação da data de iniciação.<br>
+Após ser realizada, avisamos o cliente e marcamos o melhor dia para a virada do liquid, com no mínimo dois dias de antecedência. Assim, por poderem ocorrer pequenos bugs no site na hora da atualização, acompanhamos a loja durante o dia validando se há algum erro ocorrendo.</p>
+<p>O ideal é realizarmos a migração antes de termos a confirmação do orçamento, pois com o cenário atual do código é quase inviável de realização, pode levar um longo tempo de desenvolvimento e ter um custo superior pela dificuldade.</p>
+<p>Assim, orçamos após esta atualização do código, e a LOJA já irá possuir um código limpo e atualizado para todas as próximas atualizações. Isso também assegura a loja a possuir um código mais recente, evitando certos bugs que podem ocorrer.</p>
+<hr>
+<p>Para o processo de migração do liquid da loja da versão 2 para a versão 4 precisamos seguir o seguinte fluxo:</p>
+<h2 id="importante" tabindex="-1">IMPORTANTE</h2>
+<p><em>A loja no processo de migração NÃO TERÁ DESENVOLVIMENTOS OU CORREÇÕES.<br>
+Tanto a versão de STG quanto a de PROD tem suas versões controladas individualmente, ou seja, STG e PROD podem ter versões de liquid diferentes.<br>
+Nesses casos NÃO É POSSIVEL efetuar o deploy de um código liquid 2 em uma loja liquid 4 ou vice-versa.</em></p>
+<p><em>Dessa maneira durante o processo de migração o seller precisa estar ciente de que não podemos fazer nenhum desenvolvimento, correção ou implementação.</em></p>
+<h3 id="abertura-do-card" tabindex="-1">Abertura do card</h3>
+<ul>
+<li>O card precisa conter todas as informações relevantes sobre o negócio do seller, assim como os cenários de venda diferenciados, para que a equipe de frontend possa fazer uma melhor analise do código</li>
+<li>Componentes utilizados nas lojas mais atuais poderão ser instalados na migração como: Cart Drawer, Newsletter... etc</li>
+</ul>
+<h3 id="abertura-do-ticket-para-apontamento-dos-assets-stg" tabindex="-1">Abertura do ticket para apontamento dos assets (STG)</h3>
+<ul>
+<li>É efetuado a abertura de um ticket em feature base <a href="https://productvnda.featurebase.app/pt" target="_blank" class="external-link">https://productvnda.featurebase.app/pt</a> solicitando o apontamento dos assets da loja para versão s3 em STG</li>
+<li>A abertura do ticket é feita pela equipe de frontend</li>
+</ul>
+<h3 id="review-da-migracao" tabindex="-1">Review da migração</h3>
+<ul>
+<li>Após o desenvolvimento por parte da equipe de frontend todos os processos e fluxos da loja precisam ser revisados garantindo que a migração do código não ocasionou em nenhum problema na loja.</li>
+</ul>
+<h3 id="abertura-do-ticket-para-apontamento-dos-assets-prod" tabindex="-1">Abertura do ticket para apontamento dos assets (PROD)</h3>
+<ul>
+<li>Antes de fazer o processo de deploy do código atualizado para produção é necessário também solicitar via ticket no feature base o apontamento dos assets da loja para versão s3 em PROD</li>
+<li><strong>IMPORTANTE</strong> Esse processo precisa ser solicitado com antecedência para o pessoal de N2 visando não impactar as vendas do seller em produção</li>
+</ul>
+<h3 id="deploy-do-codigo-atualizado" tabindex="-1">Deploy do código atualizado</h3>
+<ul>
+<li>Depois de efetuados os apontamentos o pessoal de frontend faz o deploy do código para produção para que o mesmo ambiente funcional em STG seja replicado para o cenário atual de PROD</li>
+</ul>
+</main>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
